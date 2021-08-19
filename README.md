@@ -6,9 +6,9 @@
 ### Banker Algorithm
 #### Class: Operating Systems
 #### Summary:
-    This project was created to receive an input file to create a resource vector, claim matrix, and allocation matrix to create a needs matrix. It finds an available resources. It uses the bankers algorithm to discover safe paths.
+This project was created to receive an input file to create a resource vector, claim matrix, and allocation matrix to create a needs matrix. It finds an available resources. It uses the bankers algorithm to discover safe paths.
 
-    To be completely honest, I don't remember the purpose of this software. I was just excited to program in C. I had previous experience with C++ and wanted to sharpen my tools. As there was no native stack data structure available, I had to create functions that emulated a stack.
+To be completely honest, I don't remember the purpose of this software. I was just excited to program in C. I had previous experience with C++ and wanted to sharpen my tools. As there was no native stack data structure available, I had to create functions that emulated a stack.
 
 ### Directory Actions
 #### Class: Operating Systems
@@ -39,12 +39,12 @@ Though the software was not complete at the due date, I still received a grade o
     
 Included in this summary is the Phase 3 (of 4 phases) presentation of the program. Below are the links to the youtube videos. They include a demonstration of the program on Windows, Linux and Mac environments with commentary.
 
-[PHASE 3 TESTING - Part 1](https://youtu.be/UmQPMBZLM_M)
-[PHASE 3 TESTING - Part 2](https://youtu.be/NH7DPovluq0)
-[PHASE 3 TESTING - Part 3](https://youtu.be/ShGPdbcrNU8)
-[PHASE 3 TESTING - Part 4](https://youtu.be/8Alq4wkwElA)
-[PHASE 3 TESTING - Part 5](https://youtu.be/F9S5rNZCy7s)
-[PHASE 3 TESTING - Part 6](https://youtu.be/CfYQ4FZfGRs)
+[PHASE 3 TESTING - Part 1](https://youtu.be/UmQPMBZLM_M) </br>
+[PHASE 3 TESTING - Part 2](https://youtu.be/NH7DPovluq0) </br>
+[PHASE 3 TESTING - Part 3](https://youtu.be/ShGPdbcrNU8) </br>
+[PHASE 3 TESTING - Part 4](https://youtu.be/8Alq4wkwElA) </br>
+[PHASE 3 TESTING - Part 5](https://youtu.be/F9S5rNZCy7s) </br>
+[PHASE 3 TESTING - Part 6](https://youtu.be/CfYQ4FZfGRs) </br>
     
 The primary difference between Phase 3 and Phase 4 is the password capture gui and input sanitization. This was performed by the other software developer on the team. The functionality was not completely tested. 
 
