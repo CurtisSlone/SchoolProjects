@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %} Simple Website{% endblock %}
+{% block content %}
+<script src="{{url_for('static', filename='js/memberUI.js')}}"></script>
+
+<div class="row">
+    <div class="col">
+        <h1> Welcome {{ name }}</h1>
+        <h2> Click on any row in the table of pictures</h2>
+        <h2> And have a little fun</h2>
+    </div>
+    
+</div>
+<div class="row">
+    <table class="container-fluid">
+        <!--------------------------->
+        <!-- Row 1 -->
+        <!--------------------------->
+        <tr class="row" id="r1">
+            <td class="col chosen">
+                <img class="transition" src="{{url_for('static', filename='img/escapefromeastberlin.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/escapefromeastberlin.png')}}">
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/escapefromeastberlin.png')}}">
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+        </td>
+        </tr>
+        <!--------------------------->
+        <!-- Row 2 -->
+        <!--------------------------->
+        <tr class="row" id="r2">
+            <td class="col chosen">
+                <img class="transition" src="{{url_for('static', filename='img/hugowaterfallbali.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}">
+            </td>
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/hugowaterfallbali.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}">
+            </td>
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/hugowaterfallbali.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+        </tr>
+        <!--------------------------->
+        <!-- Row 3 -->
+        <!--------------------------->
+        <tr class="row" id="r3">
+            <td class="col chosen">
+                <img class="transition" src="{{url_for('static', filename='img/LakeBlausee.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/LakeBlausee.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/LakeBlausee.png')}}">
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+        </tr>
+        <!--------------------------->
+        <!-- Row 4 -->
+        <!--------------------------->
+        <tr class="row" id="r4">
+
+            <td class="col chosen">
+                <img class="transition" src="{{url_for('static', filename='img/lavache.png')}}" >
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}">
+            </td>
+
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/lavache.png')}}">
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}" >
+            </td>
+
+            <td class="col not-chosen">
+                <img class="transition" src="{{url_for('static', filename='img/lavache.png')}}">
+                <img class="transition" src="{{url_for('static', filename='img/redlights.png')}}">
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,4 @@
+Hello this is a text file
+It's used for practice purposes only.
+I will hex dump, encrypt and decrypt this file.
+I might delete it, too.

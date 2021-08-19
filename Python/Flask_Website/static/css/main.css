@@ -1,0 +1,90 @@
+/* Univeral Elements CSS */
+body {
+    background-color: #ADEFD1FF;
+}
+
+.transition {
+    transition-duration: 1.8s;
+    transition-duration: 1.8s;
+    -webkit-transition-duration: 1.8s;
+}
+h1,h2,h3,h4 {
+    text-align: center;
+    color: #00203FFF;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 45px;
+}
+h3 {
+    font-size: 35px;
+}
+/* Members UI CSS */
+img {
+    width: 100%;
+    height: 500px;
+}
+
+.chosen img:first-child {
+    display:block;
+}
+
+.chosen img:last-child {
+display:none;
+}
+
+.not-chosen img:first-child {
+    display:none;
+    }
+
+.not-chosen img:last-child {
+    display:block;
+    }
+
+/* Nav CSS */
+.nav {
+    background: #00203FFF;
+    color: #ADEFD1FF;
+}
+
+.nav li a {
+    color:#ADEFD1FF;
+    text-align: center;
+    font-size: 35px;
+}
+.nav li a:hover {
+    color: #00203FFF;
+}
+
+/* FORM ELEMENTS */
+form {
+    width: 100%;
+    background-color:#00203FFF;
+    padding: 10px;
+    margin: 0 auto;
+    color: #00203FFF;
+}
+label {
+    font-size: 20px;
+    color: #ADEFD1FF;
+}
+
+input, input[type="text"],input[type="email"], input[type="password"] {
+    border-radius: 5px;
+    margin: 5px auto;
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #800000;
+    color: #ADEFD1FF;
+    font-size: 20px;
+    margin: 10px auto;
+    height:50px;
+    width: 75%;
+    display: block;
+}

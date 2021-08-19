@@ -1,0 +1,22 @@
+{
+    "members": [
+        {
+            "ID": 122,
+            "NAME": "Lenny",
+            "PASSHASH": "$5$rounds=535000$LTs92afblIqINfKO$5qCVn.QDfQTGO3/Vl8asOpxX3WtcmpubLCOuE/LhL9C",
+            "EMAIL": "lenny@smith.net"
+        },
+        {
+            "ID": 81,
+            "NAME": "Marion",
+            "PASSHASH": "$5$rounds=535000$dSUWu.w8bqgQQICs$JCndgRFTIx8mp0FQXglQlLOrhCJ0WNBzlG2np0zpQX4",
+            "EMAIL": "marion@marion.net"
+        },
+        {
+            "ID": 336,
+            "NAME": "jared  smith",
+            "PASSHASH": "$5$rounds=535000$.OuNxHDqb7LZ2T6Q$cH/.hxsyroAxbNhWykQd24z9hhgD9XXyYFt20OaRQ35",
+            "EMAIL": "jared@jared.net"
+        }
+    ]
+}

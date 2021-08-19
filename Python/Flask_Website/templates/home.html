@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %} Simple Website{% endblock %}
+{% block content %}
+{% if not current_user.is_authenticated%}
+<!--------------------------->
+<!-- Form JS -->
+<!--------------------------->
+<script src="{{url_for('static', filename='js/form.js')}}"></script>
+<!--------------------------->
+<!-- Login-->
+<!--------------------------->
+<div id="login-box" class="transition">
+    <div class="row">
+        
+        <div class="col"><h1> Sign In</h1></div>
+        
+    </div>
+    <div class="row">
+        
+        <div class="col">
+    <form id="login" action="/" method="POST">
+        <label for="login-email">Email: </label><br>
+        <input type="email" id="login-email" style="background-color: #f0f8ff;" placeholder="Email" ><br>
+        <label for="login-pass">Password: (12 Characters Min.)</label><br>
+        <input type="password" id="login-pass" style="background-color: #f0f8ff;"placeholder="Password" ><br>
+        <button type="button" id="login_button" class="btn btn-default" value="button">Submit</button><br>
+    </form>
+    </div>
+   
+    </div>
+    <div class="row">
+        
+        <div class="col">
+    <div id="loginInfo" class="alert alert-info transition" role="alert" style="display:none;"></div><br>
+    <div id="loginSuccess" class="alert alert-success transition" role="alert" style="display:none;"></div><br>
+    <div id="loginError" class="alert alert-danger transition" role="alert" style="display:none;"></div><br>
+    <div class="quick-info" style="display:none;">
+    <div id="loginInfo" class="alert alert-warning transition" role="alert"><p>Not signed up yet? Click the button below to get started!</p></div><br>
+    <btn id="signup_form" class="btn">Sign Up</btn>
+    </div>
+    </div>
+  
+    </div>
+</div>
+<!--------------------------->
+<!-- Sign UP -->
+<!--------------------------->
+<div id="sign-up-box" class="transition" style="display: none;">
+    <div class="row">
+    
+        <div class="col"><h1>Let's Get you signed up</h1></div>
+       
+    </div>
+    <div class="row">
+        <div class="col">
+<form id="sign-up" action="/" method="POST">
+    <label for="user_name">Name: </label><br>
+    <input type="text" id="user_name" style="background-color: #f0f8ff;" placeholder="First Name"><br>
+    <label for="pass">Password: (12 Characters Min.)</label><br>
+    <input type="password" id="pass" style="background-color: #f0f8ff;" placeholder="Password" ><br>
+    <label for="email">Email: </label><br>
+    <input type="email" id="email" style="background-color: #f0f8ff;" placeholder="Email"><br><br>
+    <button type="button" id="form_button" class="btn " value="button" style="display:none;">Submit</button>
+    <br>
+</form><br>
+    </div>
+
+    </div>
+    <div class="row">
+       
+        <div class="col">
+<div id="formInfo" class="alert alert-info transition" role="alert" style="display:none;"></div><br>
+<div id="formSuccess" class="alert alert-success transition" role="alert" style="display:none;"></div><br>
+<div id="formError" class="alert alert-danger transition" role="alert" style="display:none;"></div><br>
+<div id="sign-up-how-to" class="alert alert-warning"><p>When you've satisfied all the sign-up requirements, you can submit the form.</p>
+    <p>Click on a field to see the requirements</p>
+</div>
+</div>
+</div>
+</div>
+{% endif%}
+{% if current_user.is_authenticated%}
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome to a Simple Website!</h2>
+        <h3>We suggest you goto the members area</h3>
+        <a href="{{url_for('member')}}"><button class="btn">Goto the Members Area</button></a>
+    </div>
+    <div class="col-md-4"> 
+        <img src="{{url_for('static', filename='img/rules.png')}}" >
+    </div>
+</div>
+{% endif %}
+{% endblock%}

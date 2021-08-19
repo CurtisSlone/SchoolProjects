@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+        <!--------------------------->
+        <!-- Bootstrap Elements for basic grid -->
+        <!--------------------------->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <!--------------------------->
+        <!-- Ajax and Jquery-->
+        <!--------------------------->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--------------------------->
+        <!-- App Main Static Files -->
+        <!--------------------------->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    </head>
+    
+    <body >
+        <header class="container-fluid">
+            <ul class="nav row">
+                {% if not current_user.is_authenticated %}
+                <li class="col-sm">
+                    <a href="#" id="goto_landing">Home</a>
+                </li>
+                  <li class="col-sm">
+                    <a href="#" id="goto_login">Login</a>
+                  </li>
+                  <li class="col-sm">
+                    <a href="#" id="goto_signup">Sign Up</a>
+                  </li>
+                  {% endif%}
+                  {% if current_user.is_authenticated%}
+                  <li class="col-sm">
+                    <a href="{{url_for('member')}}" id="goto_member">Member</a>
+                  </li>
+                  <li class="col-sm">
+                    <a href="{{url_for('logout')}}" id="goto_member">Log Out</a>
+                  </li>
+                  {% endif %}
+                </ul>
+        </header>
+        <div class="container content">
+            <!--------------------------->
+            <!-- Main Content-->
+            <!--------------------------->
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</html>
