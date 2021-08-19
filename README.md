@@ -1,5 +1,5 @@
 # UMGC Computer Science ProjectS
-### A small collection
+### A small collection of University Computer Science Projects
 
 ## Project Summary By Language
 # C
